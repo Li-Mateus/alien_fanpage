@@ -1,0 +1,33 @@
+.hero {
+    background-image: url('../../src/images/alien-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__logo {
+            margin: 0 auto;
+            max-width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding-top: 16vh;
+        }
+    }
+}

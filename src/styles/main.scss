@@ -1,0 +1,35 @@
+@use 'hero';
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: variaveis.$preto;
+}
+
+ul {
+    list-style: none;
+}
+
+.button {
+    background-color: variaveis.$corDoBotao;
+    color: variaveis.$corDoTexto;
+    border: 1px solid variaveis.$BordaDoBotao;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: variaveis.$preto;
+        border: 1px solid variaveis.$verde;
+    }
+}
