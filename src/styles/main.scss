@@ -1,5 +1,6 @@
 @use 'hero';
 @use 'variaveis';
+@use 'trailer';
 
 * {
     margin: 0;
@@ -32,4 +33,25 @@ ul {
         background-color: variaveis.$preto;
         border: 1px solid variaveis.$verde;
     }
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corDoTexto;
+}
+
+.text {
+    @include text;
+}
+
+.text--title {
+    @include text(32px);
+
+    font-family: "Space Mono", monospace;
+}
+
+hr {
+    border-color: variaveis.$BordaDoBotao;
+    margin-bottom: 24px;
 }
