@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.cycle {
+    padding: 2vw 5.6vw;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 56px;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            &.cycle__tabs__button--is-active {
+                border-color: variaveis.$destaque;
+            }
+        }
+    }
+
+    &__contents {
+        padding-top: 24px;
+        margin-bottom: 80px;
+
+        &__item {
+            display: none;
+
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+                
+            }
+
+            h3 {
+                padding: 24px 0;
+            }
+
+            p {
+                padding-bottom: 56px;
+            }
+
+            &--is-active {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
