@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'variaveis';
 @use 'trailer';
+@use 'filmes';
 
 * {
     margin: 0;
@@ -11,6 +12,7 @@
 
 body {
     background-color: variaveis.$preto;
+    overflow-x: hidden;
 }
 
 ul {
@@ -45,10 +47,18 @@ ul {
     @include text;
 }
 
+.text--big {
+    @include text(20px);
+
+    font-family: "Space Mono", monospace;
+    font-weight: normal
+}
+
 .text--title {
     @include text(32px);
 
     font-family: "Space Mono", monospace;
+    font-weight: normal;
 }
 
 hr {
