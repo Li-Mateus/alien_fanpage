@@ -4,6 +4,7 @@
 @use 'filmes';
 @use 'ciclo';
 @use 'onde-assistir';
+@use 'footer';
 
 * {
     margin: 0;
@@ -57,6 +58,10 @@ ul {
 
 .text {
     @include text;
+}
+
+.text--small {
+    @include text(14px);
 }
 
 .text--big {
