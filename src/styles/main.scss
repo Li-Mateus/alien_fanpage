@@ -20,6 +20,11 @@ ul {
     list-style: none;
 }
 
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 .button {
     background-color: variaveis.$corDoBotao;
     color: variaveis.$corDoTexto;
