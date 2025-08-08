@@ -3,6 +3,7 @@
 @use 'trailer';
 @use 'filmes';
 @use 'ciclo';
+@use 'onde-assistir';
 
 * {
     margin: 0;
@@ -14,6 +15,11 @@
 body {
     background-color: variaveis.$preto;
     overflow-x: hidden;
+}
+
+h2 {
+    padding-bottom: 56px;
+    text-align: center;
 }
 
 ul {

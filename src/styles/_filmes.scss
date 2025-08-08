@@ -3,10 +3,6 @@
     text-align: center;
 
     &__content {
-        h2 {
-            padding-bottom: 56px;
-        }
-
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
