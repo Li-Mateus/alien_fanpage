@@ -1,0 +1,51 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDoBotao;
+    transition: background-color .3s ease;
+    z-index: 1;
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color .3s ease;
+
+        .header {
+            &__logo, &__links__item {
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s ease;
+            }
+        }
+    }
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 160px;
+        width: 100%;
+        margin: 5px;
+        transition: .3s ease;
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+            transition: .3s ease;
+
+            button {
+                height: 40px;
+                width: 200px;
+                font-size: 14px;
+            }
+        }
+    }
+}

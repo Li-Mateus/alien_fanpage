@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('[data-tab-button]');
+    const heroSection = document.querySelector('.hero');
+    const alturaHero = heroSection.clientHeight;
+
+    // Header: visibilidade
+    window.addEventListener('scroll', function() {
+        const posicaoAtual = this.window.scrollY;
+
+        if (posicaoAtual < alturaHero) {
+            ocultaElementosHeader();
+        } else {
+            exibeElementosHeader();
+        }
+    })
 
     // Seção do ciclo de vida: programação das abas
     for (let i = 0; i < buttons.length; i++) {
@@ -14,6 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
+// Header:
+function ocultaElementosHeader() {
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeElementosHeader() {
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
+
+// Seção ciclo de vida:
 function escondeAbas() {
     const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
