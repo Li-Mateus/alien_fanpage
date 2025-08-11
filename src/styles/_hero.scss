@@ -20,6 +20,10 @@
 
             img {
                 width: 100%;
+
+                @media (max-width: 768px) {
+                    max-width: 340px;
+                }
             }
         }
 
@@ -28,6 +32,10 @@
             justify-content: center;
             gap: 2rem;
             padding-top: 16vh;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
         }
     }
 }

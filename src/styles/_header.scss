@@ -6,7 +6,8 @@
     left: 0;
     background-color: variaveis.$corDoBotao;
     transition: background-color .3s ease;
-    z-index: 1;
+    z-index: 99;
+    max-width: 100%;
 
     &--is-hidden {
         background-color: transparent;
@@ -25,17 +26,26 @@
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            padding: 0 5px 0 10px;
+        }
     }
 
     &__logo {
-        max-width: 160px;
+        max-width: 80px;
         width: 100%;
         margin: 5px;
         transition: .3s ease;
+
+        @media (max-width: 768px) {
+            max-width: 64px;
+        }
     }
 
     &__links {
         display: flex;
+        align-items: center;
 
         &__item {
             margin: 5px;
@@ -45,6 +55,13 @@
                 height: 40px;
                 width: 200px;
                 font-size: 14px;
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                    height: 40px;
+                    width: 136px;
+                    letter-spacing: 0;
+                }
             }
         }
     }

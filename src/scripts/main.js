@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-    // Seção do ciclo de vida: programação das abas
+    // Seção do ciclo de vida: comportamento das abas
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao) {
             const abaAlvo = botao.target.dataset.tabButton;

@@ -9,6 +9,11 @@
             gap: 2rem;
             margin-bottom: 80px;
 
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                max-width: 100vw;
+            }
+
             &__item {
                 img {
                     max-width: 100%;

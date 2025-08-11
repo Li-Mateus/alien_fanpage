@@ -6,10 +6,15 @@
     align-items: center;
     padding: 64px 5.6vw 32px;
     border-top: 3px solid variaveis.$BordaDoBotao;
+    text-align: center;
 
     img {
         max-width: 360px;
         margin: 56px 0;
+
+        @media (max-width: 768px) {
+            max-width: 240px;
+        }
     }
 
     p {
